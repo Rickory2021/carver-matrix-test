@@ -35,28 +35,12 @@ export const App = () => {
         >
           <img src="/caib-logo.png" />
           <Button
-            data-testid="start-edit-matrix"
+            data-testid="start-chat-button"
             variant="contained"
             sx={{ borderRadius: "18px" }}
-            onClick={() => navigate(ROUTES.editMatrix)}
+            onClick={() => navigate(ROUTES.chat)}
           >
-            Edit
-          </Button>
-          <Button
-            data-testid="start-create-matrix"
-            variant="contained"
-            sx={{ borderRadius: "18px" }}
-            onClick={() => navigate(ROUTES.createMatrix)}
-          >
-            Create
-          </Button>
-          <Button
-            data-testid="start-register"
-            variant="contained"
-            sx={{ borderRadius: "18px" }}
-            onClick={() => navigate(ROUTES.register)}
-          >
-            Register
+            Start Chat
           </Button>
         </Box>
         <Card
@@ -74,23 +58,35 @@ export const App = () => {
           }}
         >
           <Typography data-testid="app" variant="h4" sx={{ color: "#FFF" }}>
-            Carver Matrix Digital Board
+            Meet CAIB
           </Typography>
           <Typography variant="h5" sx={{ color: "#FFF" }}>
-            A new way to fill out and collaborate on CARVER Matrices
+            A powerful AI-driven chatbot
           </Typography>
           <List dense>
             <ListItem>
-              <ListItemText primary="Ease of use: Our tools make it straightforward to fill out a matrix." />
+              <ListItemText
+                primary="INSTANT RESPONSES: Get quick and accurate answers to your
+                queries."
+              />
             </ListItem>
             <ListItem>
-              <ListItemText primary="EXAMPLE: description." />
+              <ListItemText
+                primary="CREATIVE COLLABORATION: Generate ideas, draft content, and
+                explore new perspectives."
+              />
             </ListItem>
             <ListItem>
-              <ListItemText primary="EXAMPLE: description." />
+              <ListItemText
+                primary="NATURAL CONVERSATIONS: Engage in human-like interactions that
+                are intuitive and relavent."
+              />
             </ListItem>
             <ListItem>
-              <ListItemText primary="EXAMPLE: description." />
+              <ListItemText
+                primary="CONTINUOUS LEARNING: Benefit from an AI that evolves and
+                improves wwith each prompt."
+              />
             </ListItem>
           </List>
         </Card>
